@@ -32,9 +32,13 @@ int main(void)
 {
     init();
 
+    /*
     while (!glfwWindowShouldClose(window)) {
 
     }
+    */
+
+    std::cout << "it works!" << std::endl;
 
     glfwDestroyWindow(window);
 
