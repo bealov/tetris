@@ -1,3 +1,9 @@
+
+build/
+bin/
+compile_commands.json
+make_run_tetris.sh
+
 # Created by https://www.gitignore.io/api/c++
 
 ### C++ ###
