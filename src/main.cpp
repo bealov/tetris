@@ -1,6 +1,9 @@
 
 #include <GLFW/glfw3.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include <iostream>
+#include "input.h"
 
 GLFWwindow* window;
 
@@ -26,22 +29,27 @@ void init() {
     }
 
     glfwMakeContextCurrent(window);
+
+    input::initializeInputs(window);
+}
+
+void render() {
+    glfwSwapBuffers(window);
 }
 
 int main(void)
 {
     init();
 
-    /*
     while (!glfwWindowShouldClose(window)) {
-
+        render();
+        glfwPollEvents();
     }
-    */
 
     std::cout << "it works!" << std::endl;
 
     glfwDestroyWindow(window);
 
-    return 0;
+    exit(EXIT_SUCCESS);
 }
 
