@@ -44,6 +44,10 @@ make_run_tetris.sh
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
 # User-specific files
 *.suo
 *.user
